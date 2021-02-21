@@ -1,20 +1,12 @@
 {
-	"name": "ts-resume",
+	"name": "@joevg/client",
 	"version": "1.0.0",
 	"main": "src/index.tsx",
-	"private": true,
 	"scripts": {
-		"build": "yarn --cwd client build",
-		"browse": "yarn --cwd client start",
-		"clean": "yarn --cwd client clean",
-		"dockerize": "ts-node release/build-docker.ts",
-		"serve": "yarn --cwd serve start"
+		"build": "rimraf dist/* && webpack",
+		"start": "webpack-dev-server",
+		"clean": "rimraf dist"
 	},
-	"workspaces": [
-		"client",
-		"release",
-		"serve"
-	],
 	"author": "joevgreathead@gmail.com",
 	"license": "MIT",
 	"dependencies": {

@@ -1,27 +1,11 @@
 {
-	"name": "ts-resume",
+	"name": "@joevg/release",
 	"version": "1.0.0",
-	"main": "src/index.tsx",
 	"private": true,
-	"scripts": {
-		"build": "yarn --cwd client build",
-		"browse": "yarn --cwd client start",
-		"clean": "yarn --cwd client clean",
-		"dockerize": "ts-node release/build-docker.ts",
-		"serve": "yarn --cwd serve start"
-	},
-	"workspaces": [
-		"client",
-		"release",
-		"serve"
-	],
+	"scripts": {},
 	"author": "joevgreathead@gmail.com",
 	"license": "MIT",
 	"dependencies": {
-		"normalize.css": "^8.0.1",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
-		"styled-components": "^5.2.0",
 		"typescript": "^4.0.3"
 	},
 	"devDependencies": {
@@ -31,11 +15,9 @@
 		"@types/styled-components": "^5.1.4",
 		"@types/webpack": "^4.41.23",
 		"@types/webpack-dev-server": "^3.11.1",
-		"css-loader": "^5.0.0",
-		"html-webpack-plugin": "^4.5.0",
+		"execa": "^5.0.0",
 		"prettier": "^2.1.2",
 		"rimraf": "^3.0.2",
-		"style-loader": "^2.0.0",
 		"ts-loader": "^8.0.6",
 		"ts-node": "^9.1.1",
 		"webpack": "^5.2.0",

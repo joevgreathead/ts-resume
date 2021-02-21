@@ -1,3 +1,4 @@
-src/data.ts
-node_modules
-dist/**
+**/src/data.ts
+**/node_modules
+**/dist
+**/Dockerfile

@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderSection } from "./components/header/";
+import { HeaderSection } from "./components/header";
 import { TechnicalSkillsSection } from "./components/technical-skills";
 import { EmploymentSection } from "./components/employment";
 import { EducationSection } from "./components/education";
