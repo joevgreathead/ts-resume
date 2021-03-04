@@ -8,6 +8,7 @@
 		"browse": "yarn --cwd client start",
 		"clean": "yarn --cwd client clean",
 		"dockerize": "ts-node release/build-docker.ts",
+		"dockerize:test": "VERSION=test ts-node release/build-docker.ts",
 		"serve": "yarn --cwd serve start"
 	},
 	"workspaces": [

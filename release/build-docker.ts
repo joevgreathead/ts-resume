@@ -13,6 +13,9 @@ const copyFiles = (srcDir: string, destDir: string) => {
 };
 
 (async () => {
+	const version = process.env.VERSION ?? "1.0.0";
+	console.log(`Building image with version ${version}`);
+
 	// clean dist
 	await execa("rimraf", ["serve/dist/*"]);
 	await execa("rimraf", ["serve/Dockerfile"]);
@@ -30,22 +33,30 @@ const copyFiles = (srcDir: string, destDir: string) => {
 		`
 FROM node:current-alpine3.10
 
+# Set the app directory
 WORKDIR /app
 
+# Copy over the necessary files for app
 COPY package.json /app
 COPY tsconfig.json /app
 COPY index.ts /app
 COPY dist/ /app/dist
 COPY public/ /app/public
 
+# Label port 3000 as the access point
 EXPOSE 3000
 
+# Install dependencies
 RUN npm install
 
+# Set environment variables
+ENV NODE_ENV=production
+
+# Run the app
 CMD npm start
 	`
 	);
 
 	// run docker image build
-	await execa("docker", ["build", "-t", "dev.joevg:1.0.0", "serve"]);
+	await execa("docker", ["build", "-t", `joevgreathead/dev.joevg:${version}`, "serve"]);
 })();
