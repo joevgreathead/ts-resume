@@ -2,10 +2,10 @@ import React, { FunctionComponent } from "react";
 import { FlexWrapper, SectionSummary, TitledSection } from "../common";
 
 export interface IEmployment {
-	company: string;
+	company?: string;
 	bullets: string[];
 	endDate?: string;
-	location: string;
+	location?: string;
 	position: string;
 	startDate: string;
 }
@@ -20,7 +20,7 @@ export const EmploymentSection: FunctionComponent<IEmploymentSectionProps> = ({ 
 			{employments.map((e) => {
 				const { company, location, position, startDate, endDate, bullets } = e;
 				return (
-					<SectionSummary key={company} left={company} right={location} bullets={bullets}>
+					<SectionSummary key={`${company}-${startDate}`} left={company} right={location} bullets={bullets}>
 						<FlexWrapper>
 							<div>{position}</div>
 							<div>

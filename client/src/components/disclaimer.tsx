@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import styled from "styled-components";
+import { onMobile } from "./common/util";
 
 export const Disclaimer = styled.div`
 	text-align: right;
@@ -7,6 +8,13 @@ export const Disclaimer = styled.div`
 	a {
 		font-size: 0.75rem;
 	}
+	margin: auto 0;
+
+	${onMobile(`
+		text-align: center;
+		margin: 1rem;
+		font-size: 1rem;
+	`)}
 `;
 
 export interface IDisclaimer {
@@ -21,7 +29,7 @@ interface IDisclaimerLabelProps {
 export const DisclaimerLabel: FunctionComponent<IDisclaimerLabelProps> = ({ disclaimer: { href, linkText } }) => {
 	return (
 		<Disclaimer>
-			<span>This resume was built using TypeScript, React, Node, Webpack, and Yarn and printed to PDF in a browser. See the code on </span>
+			<span>This resume was built using TypeScript, React, and Node.js. See the code on </span>
 			<a href={href}>{linkText}</a>
 			<span>.</span>
 		</Disclaimer>

@@ -53,6 +53,7 @@ export const Info = styled.div`
 export const Name = styled.div`
 	font-size: 1.5rem;
 	font-weight: 800;
+	width: 30%;
 
 	${onMobile(`
 		text-align: center;

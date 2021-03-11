@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import styled from "styled-components";
 import { Section } from "../common";
 import { onPrint } from "../common/util";
+import { DisclaimerLabel, IDisclaimer } from "../disclaimer";
 import { Header, Name, Info, InfoBlock, Summary } from "./styled";
 
 export interface IHeader {
@@ -14,6 +15,7 @@ export interface IHeader {
 
 export interface IHeaderProps {
 	header: IHeader;
+	disclaimer: IDisclaimer;
 }
 
 const ShorterSectionOnPrint = styled(Section)`
@@ -22,21 +24,16 @@ const ShorterSectionOnPrint = styled(Section)`
 	`)}
 `;
 
-export const HeaderSection: FunctionComponent<IHeaderProps> = ({ header }) => {
+export const HeaderSection: FunctionComponent<IHeaderProps> = ({ header, disclaimer }) => {
 	const { name, email, phone, location, summary } = header;
 
 	return (
 		<ShorterSectionOnPrint>
 			<Header>
 				<Name>{name}</Name>
-				<Info>
-					<InfoBlock>
-						<a href={`mailto:${email}`}>{email}</a>
-					</InfoBlock>
-					<InfoBlock>{phone}</InfoBlock>
-					<InfoBlock>{location}</InfoBlock>
-				</Info>
+				<DisclaimerLabel disclaimer={disclaimer} />
 			</Header>
+
 			<Summary>{summary}</Summary>
 		</ShorterSectionOnPrint>
 	);

@@ -9,11 +9,15 @@ This simple repository is set up to build my text based resume using the followi
 - Node
 - Yarn
 
-Final output can be found linked on my [Linkedin profile](https://www.linkedin.com/in/joevgreathead/) under Contact Info.
+The output can be found at: [joevg.dev](https://joevg.dev)
+
+A printed PDF version of the same can be found on [Dropbox](https://www.dropbox.com/s/gxfidqakjqboep7/JoeGreathead_Resume.pdf?dl=0).
+
+You can also find me on [Linkedin](https://www.linkedin.com/in/joevgreathead/) if you prefer.
 
 ## Set up
 
-As with anything, start by cloning the repo, then create a data.ts file in the src/ directory. A data-sample.ts file is provided with dummy data as an example.
+As with anything, start by cloning the repo, then create a data.ts file in the src/ directory. A `data-sample.ts` file is provided with dummy data as an example. Just change the file name from `data-sample.ts` to `data.ts` in order to use it.
 
 Then:
 

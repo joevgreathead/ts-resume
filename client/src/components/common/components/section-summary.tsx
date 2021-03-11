@@ -17,18 +17,20 @@ export const BoldText = styled.div`
 `;
 
 export interface SectionSummaryProps {
-	left: string;
-	right: string;
+	left?: string;
+	right?: string;
 	bullets: string[];
 }
 
 export const SectionSummary: FunctionComponent<SectionSummaryProps> = ({ left, right, bullets, children }) => {
 	return (
 		<SectionSummaryWrapper>
-			<FlexWrapper>
-				<BoldText>{left}</BoldText>
-				<BoldText>{right}</BoldText>
-			</FlexWrapper>
+			{(left || right) && (
+				<FlexWrapper>
+					<BoldText>{left}</BoldText>
+					<BoldText>{right}</BoldText>
+				</FlexWrapper>
+			)}
 			{children}
 			<BulletList bullets={bullets} />
 		</SectionSummaryWrapper>
