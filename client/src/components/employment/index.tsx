@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import styled from "styled-components";
 import { FlexWrapper, SectionSummary, TitledSection } from "../common";
 
 export interface IEmployment {
@@ -16,7 +17,7 @@ export interface IEmploymentSectionProps {
 
 export const EmploymentSection: FunctionComponent<IEmploymentSectionProps> = ({ employments }) => {
 	return (
-		<TitledSection title="Employment History">
+		<TitledSection title="Experience">
 			{employments.map((e) => {
 				const { company, location, position, startDate, endDate, bullets } = e;
 				return (

@@ -8,7 +8,6 @@ export const Disclaimer = styled.div`
 	a {
 		font-size: 0.75rem;
 	}
-	margin: auto 0;
 
 	${onMobile(`
 		text-align: center;

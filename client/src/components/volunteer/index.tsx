@@ -16,7 +16,7 @@ export interface IVolunteerSectionProps {
 
 export const VolunteerSection: FunctionComponent<IVolunteerSectionProps> = ({ volunteerHistory }) => {
 	return (
-		<TitledSection title="Volunteer Experience">
+		<TitledSection title="Volunteer">
 			{volunteerHistory.map((v) => {
 				const { organization, location, position, startDate, endDate, bullets } = v;
 				return (

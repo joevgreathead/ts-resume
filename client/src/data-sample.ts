@@ -8,7 +8,21 @@ export const header: IHeader = {
 	location: "Nowhere, NA",
 	name: "First Lastname",
 	phone: "123-456-7890",
-	summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	links: [
+		{
+			href: "https://google.com",
+			linkText: "google.com"
+		},
+		{
+			href: "https://my.site",
+			linkText: "my.site"
+		},
+		{
+			href: "https://another-site.com",
+			linkText: "another-site.com"
+		}
+	]
 };
 
 export const skills: string[] = [

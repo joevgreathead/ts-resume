@@ -8,7 +8,7 @@ export interface TechnicalSkillsProps {
 
 export const TechnicalSkillsSection: FunctionComponent<TechnicalSkillsProps> = ({ skills }) => {
 	return (
-		<TitledSection title={"Technical Skills"}>
+		<TitledSection title={"Technical Profile"}>
 			<SkillsList>
 				{skills.map((skill: string) => {
 					return <Skill key={skill}>{skill}</Skill>;

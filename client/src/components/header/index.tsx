@@ -3,7 +3,12 @@ import styled from "styled-components";
 import { Section } from "../common";
 import { onPrint } from "../common/util";
 import { DisclaimerLabel, IDisclaimer } from "../disclaimer";
-import { Header, Name, Info, InfoBlock, Summary } from "./styled";
+import { Header, Name, Summary, HeaderLink } from "./styled";
+
+export interface ILink {
+	href: string;
+	linkText: string;
+}
 
 export interface IHeader {
 	email: string;
@@ -11,6 +16,7 @@ export interface IHeader {
 	name: string;
 	phone?: string;
 	summary: string;
+	links?: ILink[];
 }
 
 export interface IHeaderProps {
@@ -25,7 +31,7 @@ const ShorterSectionOnPrint = styled(Section)`
 `;
 
 export const HeaderSection: FunctionComponent<IHeaderProps> = ({ header, disclaimer }) => {
-	const { name, email, phone, location, summary } = header;
+	const { name, links, summary } = header;
 
 	return (
 		<ShorterSectionOnPrint>
@@ -33,7 +39,13 @@ export const HeaderSection: FunctionComponent<IHeaderProps> = ({ header, disclai
 				<Name>{name}</Name>
 				<DisclaimerLabel disclaimer={disclaimer} />
 			</Header>
-
+			<HeaderLink>
+				{links?.map(({ href, linkText }: ILink) => (
+					<a key={href} href={href}>
+						{linkText}
+					</a>
+				))}
+			</HeaderLink>
 			<Summary>{summary}</Summary>
 		</ShorterSectionOnPrint>
 	);

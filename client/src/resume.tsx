@@ -6,13 +6,16 @@ import { EducationSection } from "./components/education";
 import { VolunteerSection } from "./components/volunteer";
 import { Wrapper } from "./components/common";
 import { disclaimer, educationHistory, employments, header, skills, volunteerHistory } from "./data";
+import { PageBreakAfter } from "./components/common/page-break-after";
 
 export const Resume = () => {
 	return (
 		<Wrapper>
 			<HeaderSection header={header} disclaimer={disclaimer} />
 			<TechnicalSkillsSection skills={skills} />
-			<EmploymentSection employments={employments} />
+			<PageBreakAfter>
+				<EmploymentSection employments={employments} />
+			</PageBreakAfter>
 			<EducationSection educationHistory={educationHistory} />
 			<VolunteerSection volunteerHistory={volunteerHistory} />
 		</Wrapper>

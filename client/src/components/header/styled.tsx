@@ -3,7 +3,7 @@ import { onMobile, MOBILE_TEXT_SIZE, onPrint } from "../common/util";
 
 export const Header = styled.div`
 	width: 100%;
-	border-bottom: 2px solid #000;
+	border-bottom: 1px solid #cccc;
 
 	display: flex;
 	justify-content: space-between;
@@ -11,6 +11,25 @@ export const Header = styled.div`
 
 	${onMobile(`
 		flex-wrap: wrap;
+	`)}
+`;
+
+export const HeaderLink = styled.div`
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.75rem;
+	a {
+		font-size: 0.75rem;
+	}
+
+	${onMobile(`
+		flex-flow: column;
+		text-align: center;
+		a {
+			padding-bottom: 0.25rem;
+			font-size: 1rem;
+		}
 	`)}
 `;
 
@@ -51,9 +70,8 @@ export const Info = styled.div`
 `;
 
 export const Name = styled.div`
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 800;
-	width: 30%;
 
 	${onMobile(`
 		text-align: center;
