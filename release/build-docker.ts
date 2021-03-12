@@ -13,7 +13,7 @@ const copyFiles = (srcDir: string, destDir: string) => {
 };
 
 (async () => {
-	const version = process.env.VERSION ?? "1.2.0";
+	const version = process.env.VERSION ?? "1.2.1";
 	console.log(`Building image with version ${version}`);
 
 	// clean dist

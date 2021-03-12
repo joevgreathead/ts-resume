@@ -82,7 +82,7 @@ export const Name = styled.div`
 
 export const Summary = styled.div`
 	text-align: center;
-	padding: 1.5rem 8vw 0;
+	padding: 1.5rem 7rem 0;
 
 	${onMobile(`
 		padding: 1.5rem 1rem;
