@@ -4,10 +4,7 @@ import { IHeader } from "./components/header";
 import { IVolunteer } from "./components/volunteer";
 
 export const header: IHeader = {
-	email: "someperson@gmail.com",
-	location: "Nowhere, NA",
 	name: "First Lastname",
-	phone: "123-456-7890",
 	summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	links: [
 		{

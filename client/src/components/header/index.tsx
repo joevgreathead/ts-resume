@@ -11,10 +11,7 @@ export interface ILink {
 }
 
 export interface IHeader {
-	email: string;
-	location?: string;
 	name: string;
-	phone?: string;
 	summary: string;
 	links?: ILink[];
 }
