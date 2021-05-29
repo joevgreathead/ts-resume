@@ -6,7 +6,6 @@ This simple repository is set up to build my text based resume using the followi
 - React
 - Styled Components
 - Webpack
-- Node
 - Yarn
 
 The output can be found at: [joevg.dev](https://joevg.dev)
@@ -41,7 +40,7 @@ My workflow is now reduced to:
 
 ## FAQ
 
-### Why use (React/TypeScript/Node) just for your resume?
+### Why use (React/TypeScript) just for your resume?
 
 I work in code every day and switching to using a word processor feels restricting. These technologies are what I enjoy using to build products and tools, so it only makes sense to me to represent myself through them as well.
 
