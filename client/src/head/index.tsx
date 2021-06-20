@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import { Helmet } from "react-helmet";
 
 export const Head: FunctionComponent = () => {
   const getFavIcon = () => {
@@ -12,13 +13,8 @@ export const Head: FunctionComponent = () => {
   };
 
   return (
-    <>
-      <meta charSet="utf-8" />
+    <Helmet>
       <link rel="icon" href={`public/${getFavIcon()}.ico`} />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <meta name="theme-color" content="#000000" />
-      <meta name="description" content="Learn more about Joe Greathead" />
-      <title>About Joe G</title>
-    </>
+    </Helmet>
   );
 };
