@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "yarn --cwd client build",
-    "browse": "yarn --cwd client start",
+    "start": "yarn --cwd client start",
     "clean": "yarn --cwd client clean"
   },
   "workspaces": [

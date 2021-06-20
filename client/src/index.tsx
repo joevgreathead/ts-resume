@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "normalize.css";
 import { Resume } from "./resume";
+import { Head } from "./head";
+
+ReactDOM.render(<Head />, document.getElementById("head"));
 
 ReactDOM.render(
-	<React.StrictMode>
-		<Resume />
-	</React.StrictMode>,
-	document.getElementById("root")
+  <React.StrictMode>
+    <Resume />
+  </React.StrictMode>,
+  document.getElementById("root")
 );
