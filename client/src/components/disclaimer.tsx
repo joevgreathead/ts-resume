@@ -34,7 +34,7 @@ export const DisclaimerLabel: FunctionComponent<IDisclaimerLabelProps> = ({
         This resume was built using TypeScript, React, and Webpack. See the code
         on{" "}
       </span>
-      <a href={href}>{linkText}</a>
+      <a href={href} target="_blank" rel="noopener noreferer">{linkText}</a>
       <span>.</span>
     </Disclaimer>
   );

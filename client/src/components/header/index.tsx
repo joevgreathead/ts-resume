@@ -38,7 +38,7 @@ export const HeaderSection: FunctionComponent<IHeaderProps> = ({ header, disclai
 			</Header>
 			<HeaderLink>
 				{links?.map(({ href, linkText }: ILink) => (
-					<a key={href} href={href}>
+					<a key={href} href={href} target="_blank" rel="noopener noreferer">
 						{linkText}
 					</a>
 				))}
