@@ -3,6 +3,7 @@ import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
 const webpackConfig: webpack.Configuration = {
+	mode: 'production',
 	entry: "./src/index.tsx",
 	output: {
 		filename: "app.bundle.[contenthash].js",
