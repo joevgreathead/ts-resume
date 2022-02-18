@@ -7,7 +7,7 @@ const webpackConfig: webpack.Configuration = {
 	entry: "./src/index.tsx",
 	output: {
 		filename: "app.bundle.[contenthash].js",
-		path: path.resolve(__dirname, "dist")
+		path: path.resolve(__dirname, "build")
 	},
 	module: {
 		rules: [

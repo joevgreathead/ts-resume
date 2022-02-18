@@ -6,7 +6,8 @@
   "scripts": {
     "build": "yarn --cwd client build",
     "start": "yarn --cwd client start",
-    "clean": "yarn --cwd client clean"
+    "clean": "yarn --cwd client clean",
+    "post": "yarn --cwd client prerender"
   },
   "workspaces": [
     "client"
@@ -29,6 +30,7 @@
     "css-loader": "^6.6.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.1.2",
+    "react-snap": "^1.23.0",
     "rimraf": "^3.0.2",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.6",

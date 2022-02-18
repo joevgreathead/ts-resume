@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "src/index.tsx",
   "scripts": {
-    "build": "rimraf dist/* && webpack",
+    "build": "rimraf build/* && webpack",
     "start": "webpack-dev-server",
-    "clean": "rimraf dist"
+    "clean": "rimraf build",
+    "prerender": "react-snap"
   },
   "author": "joevgreathead@gmail.com",
   "license": "MIT",

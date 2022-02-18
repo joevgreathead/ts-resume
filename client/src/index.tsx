@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 import "./index.css";
 import "normalize.css";
 import { Resume } from "./resume";
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <Resume />
   </React.StrictMode>,
