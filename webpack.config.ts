@@ -23,7 +23,7 @@ const webpackConfig: webpack.Configuration = {
 		]
 	},
 	resolve: {
-		extensions: [".tsx", ".ts", ".js", ".css"]
+		extensions: [".tsx", ".ts", ".js", ".css"],
 	},
 	devtool: "inline-source-map",
 	plugins: [
