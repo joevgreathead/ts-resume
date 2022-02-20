@@ -1,4 +1,4 @@
-import React from "react";
+import { h } from "preact";
 import { HeaderSection } from "./components/header";
 import { TechnicalSkillsSection } from "./components/technical-skills";
 import { EmploymentSection } from "./components/employment";
@@ -18,7 +18,7 @@ import { Head } from "./head";
 
 export const Resume = () => {
   return (
-    <>
+    <div>
       <Head />
       <Wrapper>
         <HeaderSection header={header} disclaimer={disclaimer} />
@@ -29,6 +29,6 @@ export const Resume = () => {
         <EducationSection educationHistory={educationHistory} />
         <VolunteerSection volunteerHistory={volunteerHistory} />
       </Wrapper>
-    </>
+    </div>
   );
 };

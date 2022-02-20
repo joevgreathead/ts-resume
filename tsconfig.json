@@ -4,6 +4,8 @@
 		"module": "commonjs",
 		"allowJs": true,
 		"jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
 		"sourceMap": true,
 		"outDir": "build",
 		"removeComments": true,

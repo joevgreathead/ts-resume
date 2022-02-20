@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { h, FunctionComponent } from "preact";
 import { Helmet } from "react-helmet";
 
 export const Head: FunctionComponent = () => {

@@ -2,28 +2,28 @@ import styled from "styled-components";
 import { onMobile, MOBILE_TEXT_SIZE, onPrint } from "../common/util";
 
 export const Header = styled.div`
-	width: 100%;
-	border-bottom: 1px solid #cccc;
+  width: 100%;
+  border-bottom: 1px solid #cccc;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 
-	${onMobile(`
+  ${onMobile(`
 		flex-wrap: wrap;
 	`)}
 `;
 
 export const HeaderLink = styled.div`
-	border-bottom: 1px solid #ccc;
-	display: flex;
-	justify-content: space-between;
-	padding: 0.75rem;
-	a {
-		font-size: 0.75rem;
-	}
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  a {
+    font-size: 0.75rem;
+  }
 
-	${onMobile(`
+  ${onMobile(`
 		flex-flow: column;
 		text-align: center;
 		a {
@@ -34,16 +34,16 @@ export const HeaderLink = styled.div`
 `;
 
 export const InfoBlock = styled.div`
-	&:after {
-		content: "  -  ";
-		white-space: pre;
-	}
+  &:after {
+    content: "  -  ";
+    white-space: pre;
+  }
 
-	&:last-child:after {
-		content: "";
-	}
+  &:last-child:after {
+    content: "";
+  }
 
-	${onMobile(`
+  ${onMobile(`
 		text-align: center;
 
 		&:first-child {
@@ -58,11 +58,11 @@ export const InfoBlock = styled.div`
 `;
 
 export const Info = styled.div`
-	padding-bottom: 3px;
-	display: flex;
-	justify-content: space-evenly;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: space-evenly;
 
-	${onMobile(`
+  ${onMobile(`
 		flex-wrap: wrap;
 		width: 100%;
 		padding-bottom: 1rem;
@@ -70,10 +70,10 @@ export const Info = styled.div`
 `;
 
 export const Name = styled.div`
-	font-size: 2rem;
-	font-weight: 800;
+  font-size: 2rem;
+  font-weight: 800;
 
-	${onMobile(`
+  ${onMobile(`
 		text-align: center;
 		width: 100%;
 		font-size: 12vw;
@@ -81,15 +81,15 @@ export const Name = styled.div`
 `;
 
 export const Summary = styled.div`
-	text-align: center;
-	padding: 1.5rem 7rem 0;
+  text-align: center;
+  padding: 1.5rem 7rem 0;
 
-	${onMobile(`
+  ${onMobile(`
 		padding: 1.5rem 1rem;
 		font-size: ${MOBILE_TEXT_SIZE};
 	`)}
 
-	${onPrint(`
+  ${onPrint(`
 		padding: 1.5rem 5.5rem;
 	`)}
 `;

@@ -1,22 +1,10 @@
-import React from "react";
-import { hydrate, render } from "react-dom";
+import { h, hydrate, render } from "preact";
 import "./index.css";
-import "normalize.css";
 import { Resume } from "./resume";
 
 const rootElement = document.getElementById("root");
 if (rootElement?.hasChildNodes()) {
-  hydrate(
-    <React.StrictMode>
-      <Resume />
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
+  hydrate(<Resume />, document.getElementById("root")!);
 } else {
-  render(
-    <React.StrictMode>
-      <Resume />
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
+  render(<Resume />, document.getElementById("root")!);
 }
