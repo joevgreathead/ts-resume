@@ -13,7 +13,6 @@ import {
   skills,
   volunteerHistory,
 } from "./data";
-import { PageBreakAfter } from "./components/common/page-break-after";
 import { Head } from "./head";
 
 export const Resume = () => {
@@ -23,9 +22,7 @@ export const Resume = () => {
       <Wrapper>
         <HeaderSection header={header} disclaimer={disclaimer} />
         <TechnicalSkillsSection skills={skills} />
-        <PageBreakAfter>
-          <EmploymentSection employments={employments} />
-        </PageBreakAfter>
+        <EmploymentSection employments={employments} />
         <EducationSection educationHistory={educationHistory} />
         <VolunteerSection volunteerHistory={volunteerHistory} />
       </Wrapper>
