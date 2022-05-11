@@ -1,6 +1,5 @@
 **/src/data.ts
 **/node_modules
-**/build
 **/Dockerfile
 **/.DS_Store
 **/*.log
