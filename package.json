@@ -4,7 +4,7 @@
   "main": "src/index.tsx",
   "private": true,
   "scripts": {
-    "build": "rimraf build/* && webpack",
+    "build": "rimraf build/* && webpack && cp build/* docs/",
     "start": "webpack-dev-server",
     "clean": "rimraf build",
     "post": "react-snap"
