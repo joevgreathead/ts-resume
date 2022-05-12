@@ -7,7 +7,7 @@
     "build": "rimraf build/* && webpack",
     "start": "webpack-dev-server",
     "clean": "rimraf build",
-    "post": "react-snap && cp build/* docs/ && cp public/* docs/"
+    "post": "react-snap && cp build/* docs/ && mkdir docs/public/ && cp public/* docs/public/"
   },
   "author": "joevgreathead@gmail.com",
   "license": "MIT",
