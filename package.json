@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf build/* && webpack",
     "start": "webpack-dev-server",
-    "clean": "rimraf build",
+    "clean": "rimraf build && rimraf docs/*.js && rimraf docs/*.txt",
     "post": "react-snap && rm build/200.html && cp build/* docs/ && cp public/* docs/public/"
   },
   "author": "joevgreathead@gmail.com",
