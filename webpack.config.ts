@@ -37,6 +37,10 @@ const webpackConfig: webpack.Configuration = {
       template: "src/template.html",
     }),
   ],
+  performance: {
+    maxEntrypointSize: 2000000,
+    maxAssetSize: 2000000,
+  },
 };
 
 export default webpackConfig;
