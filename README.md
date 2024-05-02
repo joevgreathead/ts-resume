@@ -32,13 +32,7 @@ The server should start and be located behind localhost:8080/.
 Bundle and assets can be prepared by:
 
 ```bash
-yarn build
-```
-
-Pre-rendering the HTML page can then be done by:
-
-```bash
-yarn post
+bin/complete
 ```
 
 ## Motivation
