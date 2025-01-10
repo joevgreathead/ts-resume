@@ -10,7 +10,7 @@ This simple repository is set up to build my text based resume using the followi
 
 The hosted version of my resume can be found at: [resume.joevg.dev](https://resume.joevg.dev)
 
-A printed PDF version of the same can be found on [Dropbox](https://www.dropbox.com/s/gxfidqakjqboep7/JoeGreathead_Resume.pdf?dl=0).
+A printed PDF version of the same can be found on [Dropbox](https://www.dropbox.com/scl/fi/tyla44680x3vf67ulkhef/JoeGreathead_Resume.pdf).
 
 You can also find me on [Linkedin](https://www.linkedin.com/in/joevgreathead/) or on my blog at [joevg.dev](https://joevg.dev).
 
