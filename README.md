@@ -37,7 +37,7 @@ bin/complete
 
 ## Motivation
 
-I was tired of using MS Word or Apple's Pages app to write up simple text-based resumes. Getting everything aligned correctly was a lot more work than it was generally worth. By setting up the base layout of my resume using web technologies, I have a lot more flexibility in what I can do with fewer limitations over my control.
+I was tired of using MS Word or Apple Pages to write up simple text-based resumes. Getting everything aligned correctly was a lot more work than it was generally worth. By setting up the base layout of my resume using web technologies, I have a lot more flexibility in what I can do with fewer limitations over my control.
 
 My workflow is now reduced to:
 
